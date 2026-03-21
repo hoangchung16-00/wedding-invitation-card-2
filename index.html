@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thiệp mời cưới – Hoàng Đức & Hà My</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <ul class="nav-menu">
+            <li><a href="#home" class="nav-link">Trang chủ</a></li>
+            <li><a href="#co-dau" class="nav-link">Cô dâu</a></li>
+            <li><a href="#chu-re" class="nav-link">Chú rể</a></li>
+            <li><a href="#thu-moi" class="nav-link">Thư mời</a></li>
+            <li><a href="#gallery" class="nav-link">Album</a></li>
+        </ul>
+    </nav>
+
+    <!-- Section 1: Ảnh nền (cô dâu + chú rể) + thời gian -->
+    <section id="home" class="hero-section">
+        <div class="hero-overlay"></div>
+        <img src="image/DEN09774.jpg" alt="Ảnh cô dâu và chú rể" class="hero-bg-img" onerror="this.style.display='none'; this.nextElementSibling.classList.add('show');">
+        <div class="hero-image-placeholder">
+            <p class="placeholder-text">Ảnh nền (cô dâu + chú rể)<br>DEN09774.jpg</p>
+        </div>
+
+        <!-- Music Player Button -->
+        <button id="musicToggle" class="music-toggle" aria-label="Phát nhạc">
+            <svg class="play-icon" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M8 5v14l11-7z"/>
+            </svg>
+            <svg class="pause-icon" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" style="display: none;">
+                <path d="M6 4h4v16H6V4zm8 0h4v16h-4V4z"/>
+            </svg>
+        </button>
+
+        <div class="hero-content">
+            <h1 class="couple-names">Hoàng Đức <span class="ampersand">&</span> Hà My</h1>
+            <p class="wedding-date">04 tháng 04 năm 2026</p>
+            <div class="countdown" id="countdown">
+                <div class="countdown-item">
+                    <span id="days" class="countdown-value">00</span>
+                    <span class="countdown-label">Ngày</span>
+                </div>
+                <div class="countdown-item">
+                    <span id="hours" class="countdown-value">00</span>
+                    <span class="countdown-label">Giờ</span>
+                </div>
+                <div class="countdown-item">
+                    <span id="minutes" class="countdown-value">00</span>
+                    <span class="countdown-label">Phút</span>
+                </div>
+                <div class="countdown-item">
+                    <span id="seconds" class="countdown-value">00</span>
+                    <span class="countdown-label">Giây</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 2: Ảnh cô dâu + giới thiệu -->
+    <section id="co-dau" class="intro-section">
+        <div class="container">
+            <h2 class="section-title">Cô dâu</h2>
+            <div class="intro-item">
+                <div class="intro-image-wrap">
+                    <img src="image/DEN09792.jpg" alt="Cô dâu" class="intro-image" onerror="this.style.display='none'; this.nextElementSibling.classList.add('show');">
+                    <div class="intro-image-placeholder">
+                        <p class="placeholder-text">Ảnh cô dâu<br>(DEN09792.jpg)</p>
+                    </div>
+                </div>
+                <div class="intro-content">
+                    <p class="intro-name">Hoàng Thị Hà My</p>
+                    <div class="intro-family">
+                        <p class="intro-label">Ông/Bà:</p>
+                        <p class="intro-parents">HOÀNG KIM KÝ<br>NGÔ THỊ LIÊN</p>
+                        <p class="intro-address">Khu Phố 6<br>P. Đông Hà, Quảng Trị</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3: Ảnh chú rể + giới thiệu -->
+    <section id="chu-re" class="intro-section intro-section-alt">
+        <div class="container">
+            <h2 class="section-title">Chú rể</h2>
+            <div class="intro-item reverse">
+                <div class="intro-image-wrap">
+                    <img src="image/DEN09838.jpg" alt="Chú rể" class="intro-image" onerror="this.style.display='none'; this.nextElementSibling.classList.add('show');">
+                    <div class="intro-image-placeholder">
+                        <p class="placeholder-text">Ảnh chú rể<br>(DEN09838.jpg)</p>
+                    </div>
+                </div>
+                <div class="intro-content">
+                    <p class="intro-name">Trần Hoàng Đức</p>
+                    <div class="intro-family">
+                        <p class="intro-label">Ông/Bà:</p>
+                        <p class="intro-parents">TRẦN VĂN LUYẾN<br>HOÀNG THỊ LỆ</p>
+                        <p class="intro-address">18 Võ Thị Sáu<br>P. Đông Hà, Quảng Trị</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 4: Thư mời (ảnh + 2 ngày: nhà nam / nhà nữ + địa điểm + nút Gửi thiệp mừng) -->
+    <section id="thu-moi" class="invitation-section">
+        <div class="container">
+            <h2 class="section-title">Thư mời</h2>
+            <div class="invitation-block">
+                <div class="invitation-image-wrap">
+                    <img src="image/DEN00562.jpg" alt="Thư mời" class="invitation-image" onerror="this.style.display='none'; this.nextElementSibling.classList.add('show');">
+                    <div class="invitation-image-placeholder">
+                        <p class="placeholder-text">Ảnh thư mời<br>(DEN00562.jpg)</p>
+                    </div>
+                </div>
+                <div class="invitation-details">
+                    <div class="invitation-days-row">
+                        <!-- Nhà nam -->
+                        <div class="invitation-day">
+                            <h3 class="invitation-day-title">Tiệc cưới</h3>
+                            <p class="venue-name venue-name-script">Nhà Văn Hoá Khu Phố 6</p>
+                            <p class="venue-address">Khu Phố 6, P. Đông Hà, Quảng Trị</p>
+                            <p class="venue-time-label">VÀO LÚC:</p>
+                            <p class="venue-datetime">11 GIỜ 00' | THỨ 7 | 04.04.2026</p>
+                            <p class="venue-lunar">(Nhằm ngày 17 tháng 02 năm Bính Ngọ)</p>
+                        </div>
+                    </div>
+                    <button type="button" id="btnSendWishes" class="btn-send-wishes">Gửi thiệp mừng</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 5: Album ảnh cưới -->
+    <section id="gallery" class="gallery-section">
+        <div class="container">
+            <h2 class="section-title">Album ảnh cưới</h2>
+            <div class="gallery-grid" id="galleryGrid">
+                <!-- Ô album được tạo bằng script từ danh sách ảnh (albumImages) -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-text">Rất hân hạnh được đón tiếp!</p>
+            <p class="footer-names">Hoàng Đức & Hà My</p>
+            <p class="footer-hashtag">#HoangDucHaMy2026</p>
+        </div>
+    </footer>
+
+    <!-- Modal: Gửi thiệp mừng (QR) -->
+    <div id="modalWishes" class="modal-overlay" aria-hidden="true">
+        <div class="modal-content">
+            <button type="button" class="modal-close" id="modalClose" aria-label="Đóng">&times;</button>
+            <h3 class="modal-title">Gửi thiệp mừng</h3>
+            <p class="modal-desc">Quét mã QR bên dưới để gửi lời chúc mừng đến chúng tôi.</p>
+            <div class="qr-pair">
+                <div class="qr-block">
+                    <img src="image/QR_DUC.png" alt="Mã QR Trần Hoàng Đức" class="qr-image">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Audio Element -->
+    <audio id="weddingMusic" loop>
+        <source src="Westlife_-_Beautiful_In_White_RuWikipedia.Ru_(mp3.pm).mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
