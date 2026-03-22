@@ -148,6 +148,10 @@ body {
     margin: 0 15px;
 }
 
+.bride-name {
+    white-space: nowrap;
+}
+
 .wedding-date {
     font-family: 'Playfair Display', serif;
     font-size: 24px;
